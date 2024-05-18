@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="SiteDesign.css">
+</head>
+<body>
+    <script src="Downloader.js"></script>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by artist, gallery, style, theme, tag, etc.">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Artists</a></li>
+                <li><a href="#">Artworks</a></li>
+                <li><a href="#">Auctions</a></li>
+                <li><a href="#">Viewing Rooms</a></li>
+                <li><a href="#">Galleries</a></li>
+                <li><a href="#">Fairs & Events</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Museums</a></li>
+                <li><a href="#" id="loginButton">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="banner-image.png" alt="Banner Image">
+            <div class="banner-text">
+                <h2>Hey I Am About to blow up right at here</h2>
+                <p>lol</p>
+                <a href="#" class="button">aaa</a>
+            </div>
+        </section>
+        <section class="featured">
+            <h3>Featured</h3>
+            <div class="featured-items">
+                <div class="item">
+                    <img src="featured1.png" alt="Featured Image 1">
+                    <p>first image</p>
+                </div>
+                <div class="item">
+                    <img src="featured2.png" alt="Featured Image 2">
+                    <p>second image</p>
+                </div>
+                <div class="item">
+                    <img src="featured3.png" alt="Featured Image 3">
+                    <p>third image</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="login-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo">
+                </div>
+                <h2>Log in</h2>
+                <p>Continue your design journey with Artist.</p>
+                <div class="input-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <a href="#" class="forgot-password">Forgot password</a>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me for 30 days
+                    </label>
+                </div>
+                <button class="login-button">Log in</button>
+                <p>Don't have a account? <a href="#">Register now</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="LogInScript.js"></script>
+</body>
+</html>
